@@ -1,6 +1,114 @@
-<x-app-layout>
-    <x-self.base>
-        <!-- Navigation -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitLife Gym</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+    <!-- Custom CSS -->
+    <style>
+        .hero-section {
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('/placeholder.svg?height=800&width=1600');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 100px 0;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+        }
+        
+        .section-padding {
+            padding: 80px 0;
+        }
+        
+        .bg-dark-gradient {
+            background: linear-gradient(to right, #1a1a1a, #333333);
+        }
+        
+        .trainer-card {
+            transition: transform 0.3s;
+        }
+        
+        .trainer-card:hover {
+            transform: translateY(-10px);
+        }
+        
+        .class-card {
+            border: none;
+            border-radius: 10px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        
+        .class-card:hover {
+            transform: scale(1.03);
+        }
+        
+        .testimonial-card {
+            background-color: #f8f9fa;
+            border-radius: 10px;
+            padding: 20px;
+            margin: 20px 10px;
+        }
+        
+        .price-card {
+            border-radius: 15px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+        
+        .price-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+        }
+        
+        .price-card .card-header {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+        
+        .footer {
+            background-color: #212529;
+            color: white;
+            padding: 50px 0 20px;
+        }
+        
+        .social-icons i {
+            font-size: 1.5rem;
+            margin-right: 15px;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+        
+        .social-icons i:hover {
+            color: #ff4500;
+        }
+        
+        .btn-primary {
+            background-color: #ff4500;
+            border-color: #ff4500;
+        }
+        
+        .btn-primary:hover {
+            background-color: #e03d00;
+            border-color: #e03d00;
+        }
+        
+        .text-primary {
+            color: #ff4500 !important;
+        }
+        
+        .bg-primary {
+            background-color: #ff4500 !important;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container">
             <a class="navbar-brand" href="#">FitLife<span class="text-primary">Gym</span></a>
@@ -386,5 +494,5 @@
 
     <!-- Bootstrap JS Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    </x-self.base>
-</x-app-layout>
+</body>
+</html>
